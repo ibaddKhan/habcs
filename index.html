@@ -9,11 +9,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/habcs_favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="global.css" />
   </head>
@@ -22,7 +31,15 @@
       class="bg-[#002f6a] text-white fixed z-20 left-0 right-0 top-0 py-4 shadow-md"
     >
       <nav class="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" class="text-2xl font-bold tracking-wide">HABC</a>
+        <a
+          href="#"
+          class="text-2xl font-bold tracking-wide flex items-center gap-4"
+          ><img
+            src="./assets/high_approach_bcs_logo.png"
+            class="h-12 w-12"
+            alt="High Approach Building Cleaning Services Logo"
+          />HABCS</a
+        >
         <div class="hidden md:flex items-center space-x-6">
           <a
             href="#about"
@@ -56,18 +73,22 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="transition-all duration-300 ease-in-out opacity-0 transform translate-x-full md:hidden bg-[#002f6a] text-white"
+        class="transition-all duration-300 ease-in-out opacity-0 text-xl transform translate-x-full md:hidden bg-[#002f6a] text-white"
       >
-        <a href="#about" class="block py-3 px-4 hover:bg-[#003c8b]">About Us</a>
-        <a href="#services" class="block py-3 px-4 hover:bg-[#003c8b]"
-          >Services</a
-        >
-        <a href="#clients" class="block py-3 px-4 hover:bg-[#003c8b]"
-          >Clients</a
-        >
-        <a href="#contact" class="block py-3 px-4 hover:bg-[#003c8b]"
-          >Contact Us</a
-        >
+        <div class="mt-10">
+          <a href="#about" class="block py-3 px-4 hover:bg-[#003c8b]"
+            >About Us</a
+          >
+          <a href="#services" class="block py-3 px-4 hover:bg-[#003c8b]"
+            >Services</a
+          >
+          <a href="#clients" class="block py-3 px-4 hover:bg-[#003c8b]"
+            >Clients</a
+          >
+          <a href="#contact" class="block py-3 px-4 hover:bg-[#003c8b]"
+            >Contact Us</a
+          >
+        </div>
       </div>
     </header>
 
@@ -79,7 +100,7 @@
       <div
         class="container mt-16 mx-auto px-4 flex flex-col md:flex-row items-center justify-between z-10 relative"
       >
-        <div class="md:w-1/2 text-center md:text-left fade-in-on-scroll">
+        <div class="md:w-3/4 text-center md:text-left fade-in-on-scroll">
           <h1
             class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4 animate-fadeIn"
             style="animation-delay: 0.2s"
@@ -112,16 +133,92 @@
             Download PDF
           </a>
         </div>
-        <div class="md:w-1/2 mt-10 md:mt-0 fade-in-on-scroll">
-          <!-- Placeholder for image or logo -->
-          <div
-            class="w-full max-w-sm mx-auto p-8 rounded-full bg-white/20 animate-fadeIn"
-            style="animation-delay: 0.8s"
-          >
-            <!-- A simple SVG or text logo could go here -->
-            <p class="text-center text-4xl font-bold">
-              Cleaning image to be added
-            </p>
+        <div
+          class="image-stack mt-40 md:mt-0 mb-5 md:mb-0 relative w-3/4 h-[400px] md:w-full flex items-center justify-end mr-0 md:mr-20"
+        >
+          <div class="card active absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-7.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+          <div class="card active absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-min.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/skyscraper-cleaning-dubai-8.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/complex-design-building-cleaning-dubai-14.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-2.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/skyscraper-cleaning-dubai-11.jpeg"
+              alt="workers cleaning on a commercial skyscraper building using rope access"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-3.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/HABCS-building-cleaning-dubai-13.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-12.jpeg"
+              alt="our worker on a rooftop of a highrise building"
+            />
+          </div>
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-4.jpeg"
+              alt="workers cleaning on a commercial building using rope access"
+            />
+          </div>
+
+          <div class="card absolute">
+            <img
+              src="./assets/dubai_building_cleaning_images/crew_on_rooftop_of_highrise-9.jpeg"
+              alt="our worker on a rooftop of a highrise building"
+            />
+          </div>
+
+          <div class="image_slide_buttons hidden md:block">
+            <button
+              id="prev-btn"
+              class="absolute bottom-0 left-80 z-20 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+            >
+              &#10094;
+            </button>
+
+            <!-- Next Button -->
+            <button
+              id="next-btn"
+              class="absolute bottom-0 right-6 z-20 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+            >
+              &#10095;
+            </button>
           </div>
         </div>
       </div>
@@ -136,23 +233,41 @@
           About Us
         </h2>
         <div
-          class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl"
+          class="flex flex-col md:flex-row-reverse gap-10 items-center justify-center mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl"
         >
-          <p class="text-gray-600 leading-relaxed mb-4">
-            HABC was established in 2015 with a mission to demonstrate highly
-            professional skilled manpower in the field of internal and external
-            cleaning projects. We provide highly skilled professionals with
-            extensive experience in cleaning and civil engineering. We've been
-            in the business of building long enough to know building cleaning
-            inside and outside, from top to bottom.
-          </p>
-          <p class="text-gray-600 leading-relaxed">
-            Our team has access to the latest in cleaning equipment and
-            qualified staff for housekeeping, horticulture, and pest control,
-            enabling us to offer unparalleled international quality standards.
-            We can handle services for internal & external areas with full
-            backup support from our international equipment & chemicals.
-          </p>
+          <div>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              HABC was established in 2015 with a mission to demonstrate highly
+              professional skilled manpower in the field of internal and
+              external cleaning projects. We provide highly skilled
+              professionals with extensive experience in cleaning and civil
+              engineering. We've been in the business of building long enough to
+              know building cleaning inside and outside, from top to bottom.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Our team has access to the latest in cleaning equipment and
+              qualified staff for housekeeping, horticulture, and pest control,
+              enabling us to offer unparalleled international quality standards.
+              We can handle services for internal & external areas with full
+              backup support from our international equipment & chemicals.
+            </p>
+          </div>
+
+          <div class="flex space-x-6">
+            <div>
+              <img
+                src="./assets/dubai_building_cleaning_images/our_crew_on_rooftop_of_a_cleaning_site.jpeg"
+                alt="our cleaning crew on rooftop of a high rise building"
+              />
+            </div>
+            <div>
+              <img
+                class="h-full w-full object-cover"
+                src="./assets/dubai_building_cleaning_images/HABCS_CREW_TRANSPORT-min.jpeg"
+                alt="our cleaning crew on rooftop of a high rise building"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -260,6 +375,125 @@
         </div>
       </div>
     </section>
+
+    <!-- Our Work Section -->
+
+    <section class="py-12 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#002f6a]"
+        >
+          Some of Our Work
+        </h2>
+        <!-- Slider container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="w-full h-64 overflow-hidden rounded-lg cursor-pointer"
+                onclick="openModal('./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-min.jpeg')"
+              >
+                <img
+                  src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-min.jpeg"
+                  alt="workers cleaning"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-64 overflow-hidden rounded-lg cursor-pointer"
+                onclick="openModal('./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-2.jpeg')"
+              >
+                <img
+                  src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-2.jpeg"
+                  alt="workers cleaning"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-64 overflow-hidden rounded-lg cursor-pointer"
+                onclick="openModal('./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-7.jpeg')"
+              >
+                <img
+                  src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-7.jpeg"
+                  alt="workers cleaning"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-64 overflow-hidden rounded-lg cursor-pointer"
+                onclick="openModal('./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-3.jpeg')"
+              >
+                <img
+                  src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-3.jpeg"
+                  alt="workers cleaning"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-64 overflow-hidden rounded-lg cursor-pointer"
+                onclick="openModal('./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-4.jpeg')"
+              >
+                <img
+                  src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-4.jpeg"
+                  alt="workers cleaning"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-64 overflow-hidden rounded-lg cursor-pointer"
+                onclick="openModal('./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-5.jpeg')"
+              >
+                <img
+                  src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-5.jpeg"
+                  alt="workers cleaning"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="w-full h-64 overflow-hidden rounded-lg cursor-pointer"
+                onclick="openModal('./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-6.jpeg')"
+              >
+                <img
+                  src="./assets/dubai_building_cleaning_images/highrise-building-cleaning-dubai-6.jpeg"
+                  alt="workers cleaning"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider controls -->
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      id="imageModal"
+      class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50"
+    >
+      <span
+        class="absolute top-5 right-8 text-white text-4xl cursor-pointer"
+        onclick="closeModal()"
+        >&times;</span
+      >
+      <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded-lg shadow-lg" />
+    </div>
 
     <!-- Clients Section -->
     <section id="clients" class="py-16 md:py-24 fade-in-on-scroll">
@@ -445,6 +679,7 @@
         <p>&copy; 2024 HABC. All rights reserved.</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./app.js"></script>
   </body>

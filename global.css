@@ -77,3 +77,46 @@ html {
   opacity: 1;
   pointer-events: auto;
 }
+
+.image-stack {
+  perspective: 1000px;
+}
+
+.image-stack .card {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.image-stack .card img {
+  display: block;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.image-stack .card {
+  opacity: 0.5;
+  transform: translateX(var(--offset, 0)) scale(0.95);
+}
+
+.image-stack .card.active {
+  opacity: 1;
+  transform: translateX(0) scale(1.05);
+  z-index: 10;
+}
+.image_slide_buttons button {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_slide_buttons {
+  pointer-events: auto; /* Ensure clicks work over images */
+}
+
